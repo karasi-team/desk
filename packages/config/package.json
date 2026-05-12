@@ -1,0 +1,16 @@
+{
+  "name": "@karasi/config",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./tsconfig/base.json": "./tsconfig/base.json",
+    "./eslint/base": "./eslint/base.cjs",
+    "./eslint/react": "./eslint/react.cjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.0"
+  }
+}

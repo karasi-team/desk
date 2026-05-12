@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(15, 138, 112, 0.08), transparent 45%),
+    radial-gradient(circle at 80% 0%, rgba(255, 111, 97, 0.1), transparent 35%),
+    var(--karasi-surface);
+  color: var(--karasi-ink);
+  font-family: var(--karasi-font-body);
+}

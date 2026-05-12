@@ -1,0 +1,16 @@
+node_modules
+.pnpm-store
+
+# Build outputs
+**/dist
+**/build
+**/.turbo
+
+# Logs
+npm-debug.log*
+pnpm-debug.log*
+
+# Local env
+.env
+.env.*
+!.env.example

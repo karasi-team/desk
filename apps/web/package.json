@@ -1,0 +1,35 @@
+{
+  "name": "@karasi/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint . --ext .ts,.tsx",
+    "preview": "vite preview",
+    "typecheck": "tsc -b",
+    "deploy": "wrangler pages deploy dist"
+  },
+  "dependencies": {
+    "@karasi/types": "workspace:*",
+    "@karasi/ui": "workspace:*",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@karasi/config": "workspace:*",
+    "@types/node": "^22.15.18",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.4.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.26.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.3",
+    "vite": "^5.4.19",
+    "vite-plugin-pwa": "^0.20.5",
+    "wrangler": "^3.114.10"
+  }
+}

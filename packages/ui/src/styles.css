@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@500;600;700&display=swap");
+
+:root {
+  --karasi-emerald-500: #0f8a70;
+  --karasi-emerald-900: #09493d;
+  --karasi-coral-500: #ff6f61;
+  --karasi-surface: #f3f8f6;
+  --karasi-ink: #143127;
+  --karasi-font-display: "Poppins", sans-serif;
+  --karasi-font-body: "Lato", sans-serif;
+}
+
+.font-display {
+  font-family: var(--karasi-font-display);
+}
+
+.font-body {
+  font-family: var(--karasi-font-body);
+}
