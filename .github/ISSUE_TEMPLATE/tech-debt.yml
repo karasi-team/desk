@@ -1,0 +1,35 @@
+name: Tech Debt
+description: Structural improvements that reduce risk and maintenance cost.
+title: "debt: "
+labels: ["type:debt", "status:backlog"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What debt exists and why does it matter now?
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: What risks, costs, or velocity issues does this create?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Change
+      description: What concrete change should be made?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      placeholder: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true

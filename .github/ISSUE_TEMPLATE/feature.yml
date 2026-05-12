@@ -1,0 +1,51 @@
+name: Feature
+description: Deliver a scoped product capability.
+title: "feat: "
+labels: ["type:feature", "status:backlog"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for production work items.
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What user or product outcome should this deliver?
+      placeholder: Enable students and tutors to...
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is included in this issue?
+      placeholder: Build..., integrate..., validate...
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: Use a checklist with verifiable outcomes.
+      placeholder: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of Scope
+      description: Explicitly list what is not part of this issue.
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Linked issues, technical prerequisites, or external constraints.
+      placeholder: "Blocked by #123"
+  - type: textarea
+    id: test_demo
+    attributes:
+      label: Test and Demo Notes
+      description: How should this be validated or demonstrated?

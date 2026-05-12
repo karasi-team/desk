@@ -1,0 +1,34 @@
+name: Epic
+description: Parent issue for grouping related work.
+title: "epic: "
+labels: ["type:epic", "status:backlog"]
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What strategic outcome does this epic deliver?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Boundaries for this epic.
+    validations:
+      required: true
+  - type: textarea
+    id: child_issues
+    attributes:
+      label: Child Issues
+      description: Add and maintain links to all child tasks.
+      placeholder: |
+        - [ ] #123
+        - [ ] #124
+  - type: textarea
+    id: done_definition
+    attributes:
+      label: Definition of Done
+      placeholder: |
+        - [ ]
+        - [ ]

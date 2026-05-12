@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Project Spec
+    url: https://github.com/karasi-team/desk/blob/main/PROJECT_SPEC.md
+    about: Read the full Karasi Desk specification before filing new work.

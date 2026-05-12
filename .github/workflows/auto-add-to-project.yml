@@ -1,0 +1,19 @@
+name: Auto Add Issues To Project
+
+on:
+  issues:
+    types: [opened, reopened, labeled]
+
+permissions:
+  contents: read
+
+jobs:
+  add-to-project:
+    if: contains(github.event.issue.labels.*.name, 'type:feature') || contains(github.event.issue.labels.*.name, 'type:bug') || contains(github.event.issue.labels.*.name, 'type:debt') || contains(github.event.issue.labels.*.name, 'type:epic')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add issue to project
+        uses: actions/add-to-project@v1.0.2
+        with:
+          project-url: ${{ vars.KARASI_PROJECT_URL }}
+          github-token: ${{ secrets.KARASI_PROJECT_PAT }}
