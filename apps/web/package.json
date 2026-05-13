@@ -12,8 +12,10 @@
     "deploy": "wrangler pages deploy dist"
   },
   "dependencies": {
+    "@karasi/engine": "workspace:*",
     "@karasi/types": "workspace:*",
     "@karasi/ui": "workspace:*",
+    "@supabase/supabase-js": "^2.49.8",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

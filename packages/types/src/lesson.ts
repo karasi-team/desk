@@ -27,3 +27,52 @@ export interface LawLesson extends Lesson {
 }
 
 export type ModularLesson = EnglishLesson | MathLesson | LawLesson;
+
+export type DrawingTool = "pen" | "eraser" | "text";
+
+export interface CanvasPoint {
+  x: number;
+  y: number;
+}
+
+export interface CanvasStroke {
+  id: string;
+  roomId: string;
+  userId: string;
+  tool: Exclude<DrawingTool, "text">;
+  color: string;
+  size: number;
+  points: CanvasPoint[];
+  createdAt: string;
+}
+
+export interface TextAnnotation {
+  id: string;
+  roomId: string;
+  userId: string;
+  color: string;
+  position: CanvasPoint;
+  text: string;
+  createdAt: string;
+}
+
+export type CanvasEventType = "stroke" | "text" | "clear";
+
+export interface CanvasEvent {
+  eventId: string;
+  roomId: string;
+  userId: string;
+  sequence: number;
+  type: CanvasEventType;
+  payload: CanvasStroke | TextAnnotation | { reason?: string };
+  createdAt: string;
+}
+
+export interface PresenceState {
+  roomId: string;
+  userId: string;
+  displayName?: string;
+  color?: string;
+  isActive: boolean;
+  lastSeenAt: string;
+}
